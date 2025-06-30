@@ -1,0 +1,1 @@
+document.querySelectorAll(".delete-team-btn img").forEach(t=>{t.addEventListener("mouseenter",function(){this.src=this.getAttribute("data-hover")}),t.addEventListener("mouseleave",function(){this.src=this.getAttribute("data-default")})});

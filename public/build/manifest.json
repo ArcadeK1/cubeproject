@@ -1,0 +1,59 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-s2D54PDe.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/fonts/Circe/Circe.ttf": {
+    "file": "assets/Circe-Dz1i-umt.ttf",
+    "src": "resources/fonts/Circe/Circe.ttf"
+  },
+  "resources/fonts/Circe/CirceBold.ttf": {
+    "file": "assets/CirceBold-BDSXF6ne.ttf",
+    "src": "resources/fonts/Circe/CirceBold.ttf"
+  },
+  "resources/fonts/Circe/CirceExtraBold.ttf": {
+    "file": "assets/CirceExtraBold-CKPpJ2HL.ttf",
+    "src": "resources/fonts/Circe/CirceExtraBold.ttf"
+  },
+  "resources/fonts/Circe/CirceLight.ttf": {
+    "file": "assets/CirceLight-DJgDbZIE.ttf",
+    "src": "resources/fonts/Circe/CirceLight.ttf"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-nJH-PWiL.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/jsqr.js": {
+    "file": "assets/jsqr-CBmv3Dgp.js",
+    "name": "jsqr",
+    "src": "resources/js/jsqr.js",
+    "isEntry": true
+  },
+  "resources/js/qrSearch.js": {
+    "file": "assets/qrSearch-iYit__16.js",
+    "name": "qrSearch",
+    "src": "resources/js/qrSearch.js",
+    "isEntry": true
+  },
+  "resources/js/teamTrashButton.js": {
+    "file": "assets/teamTrashButton-C4p7zFQk.js",
+    "name": "teamTrashButton",
+    "src": "resources/js/teamTrashButton.js",
+    "isEntry": true
+  },
+  "resources/js/trashButton.js": {
+    "file": "assets/trashButton-MT-ZyO4q.js",
+    "name": "trashButton",
+    "src": "resources/js/trashButton.js",
+    "isEntry": true
+  },
+  "resources/js/viewerRefresh.js": {
+    "file": "assets/viewerRefresh-D1UncbVT.js",
+    "name": "viewerRefresh",
+    "src": "resources/js/viewerRefresh.js",
+    "isEntry": true
+  }
+}
