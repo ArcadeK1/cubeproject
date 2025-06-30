@@ -1,0 +1,1451 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Circe";
+    src: url(../fonts/Circe/Circe.ttf);
+}
+
+@font-face {
+    font-family: "Circe Bold";
+    src: url(../fonts/Circe/CirceBold.ttf);
+}
+
+@font-face {
+    font-family: "Circe Extra Bold";
+    src: url(../fonts/Circe/CirceExtraBold.ttf);
+}
+
+
+@font-face {
+    font-family: "Circe Light";
+    src: url(../fonts/Circe/CirceLight.ttf);
+}
+
+:root
+{
+    font-family: "Circe";
+}
+
+h2
+{
+    font-family: "Circe Bold";
+}
+
+.cuberedirector
+{
+    width: 100%;
+    
+}
+
+.cubelogin
+{
+    width: 100%;
+}
+
+
+.cubelogo
+{
+    margin-top: 15px;
+}
+
+.cubelogo img
+{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cubelogo a
+{
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.cuberedirect
+{
+    text-align: center;
+}
+
+.cuberedirect h5
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.redirectbtn
+{
+    background-color: #1c75bc;
+    font-family: "Circe Bold";
+    color: white;
+    display: block;
+    border: none;
+    padding: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+    font-size: 28px;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.redirectbtn:hover
+{
+    background-color: #175e97;
+    transition: all ease 0.3s;
+}
+
+
+
+.loginform
+{
+    font-size: 28px;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.loginform h2
+{
+    font-size: 28px;
+    font-family: "Circe Bold";
+    text-align: center;
+}
+
+
+.formbutton
+{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.loginbtn
+{
+    background-color: #1c75bc;
+    font-family: "Circe Bold";
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    transform: all ease 0.5s;
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.loginbtn:hover
+{
+    padding: 12px;
+    background-color: #175e97;
+    transform: all ease 0.5s;
+}
+
+
+.cubebtn
+{
+    background-color: #1c75bc;
+    font-family: "Circe Bold";
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    transform: all ease 0.5s;
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.cubebtn:hover
+{
+    padding: 12px;
+    background-color: #175e97;
+    transform: all ease 0.5s;
+}
+
+.login_field
+{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+.login_field input
+{
+    width: 100%;
+    font-family: "Circe";
+    font-size: 28px;
+    border-radius: 6px;
+}
+
+.password_field
+{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+.password_field input
+{
+    width: 100%;
+    font-family: "Circe";
+    font-size: 28px;
+    border-radius: 6px;
+}
+
+
+.cubenavbar {
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center; /* Выравниваем все элементы по вертикали */
+    padding: 0 20px; /* Добавляем отступы слева и справа */
+}
+
+.cubenavbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Выравниваем элементы по вертикали */
+    width: 100%; /* Растягиваем ul на всю ширину */
+    margin: 0; /* Убираем стандартные отступы */
+    padding: 0; /* Убираем стандартные отступы */
+    list-style: none; /* Убираем маркеры списка */
+}
+
+.cubenavbar ul li {
+    margin-left: 10px;
+}
+
+.username {
+    display: flex;
+    align-items: center; /* Выравниваем элементы по вертикали */
+    margin-left: auto; /* Прижимаем к правому краю */
+    margin-right: 10px;
+    
+}
+
+.username p {
+    margin: 0; /* Убираем отступы у текста */
+    margin-right: 20px;
+}
+
+.logo {
+    height: 100%; /* Логотип занимает всю высоту навбара */
+    display: flex;
+    align-items: center; /* Выравниваем логотип по центру */
+    object-fit: contain;
+}
+
+.logo img {
+    height: auto; /* Позволяет сохранять пропорции */
+    width: auto;  /* Поддерживает соотношение сторон */
+    max-height: 80px; /* Ограничиваем высоту */
+    max-width: 100%;  /* Чтобы не выходило за контейнер */
+    object-fit: contain; /* Сохраняем изображение без обрезки */
+}
+
+
+.outtaherebtn img {
+    height: 30px;
+    align-self: center;
+}
+
+.outtaherebtn {
+    text-align: center;
+    width: auto;
+    padding: 8px;
+    border-radius: 35px;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    cursor: pointer; /* Добавляем курсор при наведении */
+}
+
+
+.adminevents
+{
+    font-size: 28px;
+    font-family: 'Circe';
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+.adminevents h2
+{
+    font-size: 36px;
+    text-align: center;
+}
+
+
+.compcard
+{
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.competitionname
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cubecompetition
+{
+
+    width: 60%;
+    padding: 25px;
+    border-bottom: 1px solid gray;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cubecompetition_title a
+{
+    font-size: 32px;
+    font-family: "Circe Bold";
+}
+
+.eventinfo
+{
+    font-size: 28px;
+    font-family: "Circe";
+    color:black;
+}
+
+
+
+.minidirections h4
+{
+    margin-top: 5px;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.minidirections
+{
+    margin-bottom: 10px;
+}
+
+
+.eventinfo h1
+{
+    text-align: center;
+    font-family: "Circe Bold";
+    font-size: 32px;
+}
+
+.challenges
+{
+    margin-left: 10px;
+}
+
+.challenge_row
+{
+    display: flex;
+}
+
+.challenges ul li
+{
+    margin-right: 10px;
+}
+
+.challengetable table thead th
+{
+    background-color: #1c75bc;
+    color: white;
+    text-align: center;
+    font-family: "Circe";
+}
+
+
+.challengetable table tr th
+{
+    padding: 10px;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+.challengetable
+{
+    width: 90%;
+    overflow: auto;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+    padding: 2px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+.resultsheader
+{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: auto;
+    background-color: #1c75bc;
+    color:white;
+    font-family: "Circe Bold";
+    font-size: 24px;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.challengetable tr
+{
+    padding: 10px;
+    text-align: center;
+}
+
+.challengetable table
+{
+    width: 100%;
+}
+
+.challengetable table tbody
+{
+    overflow: auto;
+}
+
+.challengetable table tbody tr
+{
+    border-bottom: 1px solid #1c75bc;
+}
+
+.scoreupdatetable td
+{
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+.scoreupdatetable table thead th
+{
+    background-color: #1c75bc;
+    color: white;
+    text-align: center;
+    font-family: "Circe";
+}
+
+.scoreupdatetable
+{
+    width: 90%;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 2px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.scoreupdatetable tr
+{
+    padding: 10px;
+    text-align: center;
+}
+
+.scoreupdatetable table
+{
+    width: 100%;
+}
+
+
+.scoreupdatetable table tbody tr
+{
+    border-bottom: 1px solid #1c75bc;
+}
+
+.eventandteams
+{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+
+.pointvalue
+{
+    border-radius: 30px;
+    font-family: 'Circe Bold';
+    max-width: 30%;
+    width: auto;
+}
+
+
+
+.scoreeditor h1
+{
+    margin-left: auto;
+    font-family: 'Circe Bold';
+}
+
+
+.scoreeditor h2
+{
+    margin-left: auto;
+    font-family: 'Circe';
+    font-weight: 'regular';
+}
+
+
+.scoreupdatetabletd
+{
+    padding: 10px;
+    text-align: center;
+}
+
+
+.resultsbutton
+{
+    text-align: center;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.createacompetition
+{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 36px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.nameandedit
+{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.editbtn
+{
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    transition: all ease 0.3s;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 40px;
+}
+
+.editbtn img
+{
+    height: 40px;
+}
+
+.pdfbtn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #1c75bc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+}
+.pdf-btn:hover {
+    background-color: #145a8d;
+}
+
+
+.createacompetition h1
+{
+    font-family: "Circe Bold";
+    margin-top: 15px;
+}
+
+
+.floating-label {
+    position: relative;
+    margin-bottom: 20px; /* Увеличиваем отступ */
+    font-size: 24px;
+}
+
+.floating-label input
+{
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+
+.form-label
+{
+    font-family: "Circe Bold";
+}
+
+.floating-label input,
+.floating-label select {
+    width: 100%;
+    padding: 10px 10px 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: none;
+    margin-top: 20px;
+}
+
+.floating-label label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    padding: 0 5px;
+}
+
+.floating-label input:focus + label,
+.floating-label input:not(:placeholder-shown) + label,
+.floating-label select:focus + label,
+.floating-label select:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 8px;
+    font-size: 12px;
+    color: #1c75bc;
+    border: none;
+}
+
+.floating-label input:focus,
+.floating-label select:focus {
+    outline: none; /* Убирает стандартную обводку */
+    box-shadow: none; /* Убирает glow-эффект */
+    border-color: #1c75bc; /* Заменяет цвет рамки (по желанию) */
+}
+
+
+.has-error label
+{
+    color: red; /* Делаем плейсхолдер красным, если есть ошибка */
+}
+
+.floating-field select
+{
+    border-radius: 1px;
+}
+
+
+.floating-field input
+{
+    border-radius: 1px;
+}
+
+.floating-field select:focus 
+{
+    outline: none; /* Убирает стандартную обводку */
+    box-shadow: none; /* Убирает glow-эффект */
+    border-color: #1c75bc; /* Заменяет цвет рамки (по желанию) */
+}
+
+.floating-field
+{
+    margin-bottom: 20px;
+}
+
+
+.floating-field label
+{
+    margin-left: 8px;
+}
+
+.challenge_choose_label
+{
+    font-size: 16px;
+}
+
+.team_choose_label
+{
+    font-size: 16px;
+}
+.judge_choose_label
+{
+    font-size: 16px;
+}
+
+.challenges_to_add
+{
+    margin-top: 15px;
+}
+
+
+.teams_to_add
+{
+    margin-top: 15px;
+}
+
+
+.judges_to_add
+{
+    margin-top: 15px;
+}
+
+.neweventbutton
+{
+    text-align: center;
+}
+
+
+ /* Стили для скроллящегося контейнера с чекбоксами */
+ .challenges-container, .teams-container, .judges-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+
+.challenge-item, .team-item, .judge-item {
+    margin-bottom: 10px;
+}
+
+.challenge-item label, .team-item label, .judge-item label {
+    margin-left: 10px;
+}
+
+.adminevents form button
+{
+    text-align: center;
+}
+
+
+.team-item 
+{
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.delete-team-btn 
+{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto;
+}
+
+.delete-team-btn img {
+    height: 30px;
+    transition: opacity 0.2s ease-in-out;
+    max-width: unset;
+}
+
+
+
+
+.challenge-item
+{
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.delete-challenge-btn 
+{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto;
+}
+
+.delete-challenge-btn img {
+    height: 30px;
+    transition: opacity 0.2s ease-in-out;
+    max-width: unset;
+}
+
+
+
+#qr-canvas
+{
+    display: none;
+}
+
+
+.qrscanner 
+{
+    width: 100%;
+}
+
+.qrscanner h2
+{
+    text-align: center;
+
+    font-size: 36px;
+}
+
+
+.qrscanner video
+{
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.scannerbutton
+{
+    width: 20%;
+    margin: 0 auto;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+
+.scannerbutton button
+{
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #1c75bc;
+    color:white;
+    border-radius: 8px;
+    border: 1px solid #1c75bc;
+}
+
+
+.scannerbutton button:hover
+{
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #10446e;
+    color:white;
+    border-radius: 8px;
+    border: 2px solid #10446e;
+}
+
+
+
+.scoreeditor
+{
+    font-size: 28px;
+}
+
+
+#qr-link
+{
+    width: 20%;
+    margin: 0 auto;
+    align-self: center;
+    margin-bottom: 10px;
+    background-color: gray;
+    color: white;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;   
+    border-radius: 8px;
+}
+
+
+#edit-link
+{
+    text-align: center;
+}
+
+.qrscanner h4
+{
+    text-align: center;
+}
+
+
+
+/* Стили для списка мероприятий */
+.competition-list {
+    width: fit-content;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.competition-list h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.competition-list ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    font-size: 14px;
+}
+
+.competition-list ul li {
+    margin-left: 10px;
+    padding: 8px;
+    background-color: #1c75bc;
+    border-radius: 15px;
+
+}
+
+.competition-list ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.competition-list ul li a.active {
+    color: whitesmoke; /* Цвет для активного мероприятия */
+    font-weight: bold;
+}
+
+
+.deletebtn {
+    background-color: none;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all ease 0.5s;
+}
+
+
+.beaviewerbtn {
+    background-color: #a7a7a7;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+    font-size: 28px;
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.beaviewerbtn:hover {
+    transition: all ease 0.5s;
+    background-color: #525252;
+}
+
+
+.deletebtn img
+{
+    transition: opacity 0.2s ease-in-out;
+    max-width: unset;
+    height: 30px;
+}
+
+.adminevents h5
+{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.teamroom
+{
+    font-family: 'Circe';
+}
+
+.teamname
+{
+    font-family: 'Circe Bold';
+    margin-top: 20px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.criterion
+{
+    font-family: 'Circe Bold';
+    text-align: center;
+    font-size: 24px;
+}
+
+.teamstatheader
+{
+    background-color: #1c75bc;
+}
+
+.addme
+{
+    display: none;
+}
+
+.newchallengebtn
+{
+    font-family: "Circe Bold";
+    border-bottom: 1px solid #1c75bc;
+    margin-bottom: 15px;
+}
+
+
+.newteambtn
+{
+    font-family: "Circe Bold";
+    border-bottom: 1px solid #1c75bc;
+    margin-bottom: 15px;
+
+}
+
+
+.leavebtn
+{
+    width: 50px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    height: 50px;
+}
+
+.leavebtn img
+{
+    height: 30px;
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+.viewersname h2
+{
+    text-align: center;
+}
+
+.viewerwelcome
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+
+/* The switch - the box around the slider */
+.switch 
+{
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+  
+  /* Hide default HTML checkbox */
+.switch input 
+{
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .onoff
+  {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 1px solid #adb5bd;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .onoff:before 
+  {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.27em;
+    bottom: 0.25em;
+    background-color: #adb5bd;
+    transition: .4s;
+  }
+  
+  input:checked + .onoff 
+  {
+    background-color: #1c75bc;
+    border: 1px solid #1c75bc;
+  }
+  
+  input:focus + .onoff 
+  {
+    box-shadow: 0 0 1px #1c75bc;
+  }
+  
+  input:checked + .onoff:before 
+  {
+    transform: translateX(1.4em);
+    background-color: #fff;
+  }
+
+
+.switcher
+{
+    font-size: 18px;
+    width: 250px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+
+.switcher p
+{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.competitionjudges
+{
+    margin-left: 5%;
+}
+
+.competitionjudges h3
+{
+    font-family: "Circe Bold";
+}
+
+
+.competitionjudges ol
+{
+    padding-left: 30px;
+}
+
+.competitionjudges li
+{ 
+    list-style-type: disc;
+}
+
+
+
+.competitionselector
+{
+    display: block;
+    width: 65%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.event-selection h2
+{
+    font-size: 36px;
+}
+
+
+.event-list
+{
+    margin-top: 20px;
+}
+
+
+.event-selection input
+{
+    width: 50%;
+}
+
+
+.event-list select
+{
+    width: 50%;
+    font-family: "Circe Bold";
+    
+}
+
+.viewerwelcome h1
+{
+    font-size: 44px;
+}
+
+.alert-danger
+{
+    font-size: 16px;
+    width: 55%;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: lightcoral;
+    color:white;
+    font-family: "Circe Bold";
+    padding-left: 30px;
+
+}
+
+@media (display-mode: standalone) {
+    .addme 
+    {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 600px) 
+{
+
+    .addme
+    {
+        display: block;
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+
+
+    .alert-danger
+    {
+        font-size: 16px;
+        width: 75%;
+    }
+
+
+    .loginform
+    {
+        font-size: 28px;
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+
+    .createacompetition
+    {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 36px;
+        padding-bottom: 300px;
+        margin-bottom: 20px;
+    }
+        
+    #qr-video
+    {
+        width: 90%;
+        height: auto;
+    }
+    
+    .scannerbutton
+    {
+        width: 60%;
+        margin: 0 auto;
+        align-self: center;
+        margin-bottom: 10px;
+    }
+
+    .username
+    {
+        margin-right: 0;
+    }
+
+    .username p
+    {
+        max-width: 65%;
+        margin-right: 0;
+    }
+    .cuberedirect
+    {
+        text-align: center;
+    }
+
+    .redirectbtn
+    {
+        background-color: #1c75bc;
+        font-family: "Circe Bold";
+        padding: 10px;
+        font-size: 24px;
+        color: white;
+        border-radius: 10px;
+        transform: all ease 0.3s;
+        margin-top: 20px;
+        display: block;
+        width: 85%;
+        
+    }
+
+    .redirectbtn:hover
+    {
+        padding: 12px;
+        background-color: #175e97;
+        transform: all ease 0.3s;
+    }
+
+    .login_field
+    {
+        font-size: 22px;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .login_field input
+    {
+        width: 100%;
+        font-family: "Circe";
+        font-size: 22px;
+        border-radius: 6px;
+    }
+
+    .password_field
+    {
+        font-size: 22px;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+
+    .password_field input
+    {
+        width: 100%;
+        font-family: "Circe";
+        font-size: 22px;
+        border-radius: 6px;
+    }
+
+
+    .cubecompetition
+    {
+        width: 90%;
+    }
+
+
+    .challengetable
+    {
+        width: 98%;
+        font-size: 22px;
+    }
+
+    .resultsheader
+    {
+        width: 98%;
+        color:white;
+    }
+
+    .nameandedit
+    {
+        font-size: 20px;
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+
+    #qr-link
+    {
+        width: 70%;
+        margin: 0 auto;
+        align-self: center;
+        margin-bottom: 10px;
+        background-color: gray;
+        color: white;
+        border-bottom: 1px solid gray;
+        cursor: pointer;
+        text-align: center;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 7px;
+        padding-bottom: 7px;   
+        border-radius: 8px;
+    }
+
+
+
+    .beaviewerbtn {
+        font-size: 24px;
+        width: 85%;
+        margin: 0 auto;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+
+    .event-selection input
+    {
+        margin-top: 10px;
+        width: 99%;
+    }
+
+
+    .event-list select
+    {
+        width: 99%;
+        
+    }
+    
+
+    .competitionselector
+    {
+        display: block;
+        width: 85%;
+      
+    }
+
+    .event-selection h2
+    {
+        font-size: 28px;
+    }
+
+
+}
